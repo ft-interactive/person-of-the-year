@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "MetricWeb", sans-serif;
+  color: #333;
+  background-color: #fff1e0;
+  -webkit-font-smoothing:antialiased;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.o-footer__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img--full {
+  width: 90%;
+  max-width: 460px;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  padding: 0;
+}

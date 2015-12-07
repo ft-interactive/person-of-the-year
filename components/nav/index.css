@@ -1,0 +1,77 @@
+.reading-nav {
+  background-color: #67665e;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  text-align: center;
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0px 4px rgba(0,0,0,.5);
+  top:-75px;
+}
+
+.on {
+  top: 0;
+}
+
+
+.reading-nav::-webkit-scrollbar { display: none; }
+
+.reading-nav a{
+  display: inline-block;
+  padding: 15px 11px;
+  text-align: center;
+  font-family: 'MetricWeb', sans-serif;
+  letter-spacing: .01em;
+  color: #fff;
+  opacity: 0.85;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color 0.1s ease .1s;
+}
+.reading-nav a.selected,
+.reading-nav a:hover {
+  opacity: 1;
+}
+
+.reading-nav a.selected {
+  background-color: #403F3F;
+}
+
+.reading-nav a.reading-nav__ft {
+  padding: 9px 13px 9px 10px;
+  float: left;
+  line-height: 0;
+}
+
+@media (min-width:660px) {
+  .reading-nav a.reading-nav__ft {
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+}
+
+#reading-marker {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  height: 5px;
+  background: #AE3358;
+  width: 30px;
+  left: 20px;
+}
+
+.reading-nav__sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
