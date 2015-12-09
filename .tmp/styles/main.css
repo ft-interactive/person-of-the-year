@@ -283,9 +283,9 @@
   font-style: normal; }
 
 @font-face {
-  src: url("//build.origami.ft.com/files/o-fonts-assets@1.0.0/MetricWeb-Semibold.woff") format("woff");
+  src: url("//build.origami.ft.com/files/o-fonts-assets@1.0.0/MetricWeb-Medium.woff") format("woff");
   font-family: MetricWeb;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -326,7 +326,6 @@ body {
   margin: 0 1em; }
 
 .people-group {
-  border-radius: 0px 0px 4px 4px;
   margin-bottom: 1.5em; }
 
 .card {
@@ -338,13 +337,16 @@ body {
   background: #FFFBF7;
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15); }
 
+.people-group .card:last-child {
+  border-radius: 0px 0px 4px 4px; }
+
 .img-holder img {
   width: 57px;
   height: 57px; }
 
 /* Person of  the Year: */
 .headline {
-  font-family: FinancierDisplay-Regular;
+  font-family: MetricWeb, sans-serif;
   font-size: 27px;
   color: #FFFFFF;
   line-height: 26px;
@@ -354,7 +356,7 @@ body {
 
 /* 2015: THE WINNER: */
 .winner_section_title {
-  font-family: Metric-Semibold;
+  font-family: MetricWeb, sans-serif;
   font-size: 14px;
   color: #333333;
   letter-spacing: 0.1em;
@@ -362,54 +364,66 @@ body {
 
 /* Line: */
 /* Angela Merkel: */
-.winner .name {
-  font-family: Metric-Semibold;
-  font-size: 16px;
+.name {
+  font-family: MetricWeb, sans-serif;
+  font-size: 20px;
   color: #333333;
-  line-height: 26px; }
+  line-height: 26px;
+  margin: 0;
+  font-weight: 500; }
 
 .img-holder,
 .card__body {
   display: inline-block; }
 
-.card-body {
+.img-holder {
+  margin-right: 1em; }
+
+.runnerup .card__body,
+.previous .card__body {
   position: absolute;
   top: 8px; }
+  .runnerup .card__body > p,
+  .previous .card__body > p {
+    margin: 0; }
 
-.name {
-  margin: 0; }
+.job {
+  font-family: MetricWeb, sans-serif;
+  font-weight: 500;
+  color: #a7a59b;
+  letter-spacing: 0.03em; }
 
 /* Blurb: */
 .standfirst {
-  font-family: FinancierDisplay-Regular;
+  font-family: FinancierDisplayWeb, serif;
   font-size: 16px;
   color: #505050;
   line-height: 22px; }
 
 /* Kevin Mendoza: */
-/* font-family: Metric-Semibold;
+/* font-famil'y: MetricWeb, serif';
 font-size: 16px;
 color: #333333;
 line-height: 16px;
  */
 /* SECTION TITLE: */
 .section_title {
-  font-family: FinancierDisplay-Regular;
+  font-family: MetricWeb, sans-serif;
   font-size: 16px;
   color: #505050; }
 
 /* PREVIOUS WINNER NAME: */
 .previous_name {
-  font-family: Metric-Semibold;
+  font-family: MetricWeb, sans-serif;
   font-size: 16px;
   color: #333333;
   line-height: 16px; }
 
 /* YEAR: */
 .year {
-  font-family: Metric-Semibold;
+  font-family: MetricWeb, sans-serif;
   font-size: 14px;
-  color: #9B164F;
+  color: #9b164f;
   letter-spacing: 0.5px;
   line-height: 16px; }
 
@@ -423,16 +437,16 @@ line-height: 16px;
 /* arrow: */
 .full_profile:hover {
   /* Rectangle 7:hover: */
-  background: #9B164F;
+  background: #9b164f;
   width: 116px;
   height: 28px;
   /* Full profile: */
   font-family: Metric-Regular;
   font-size: 16px;
-  color: #EBEBEB;
+  color: #ebebeb;
   line-height: 22px;
   /* arrow: */
-  border: 3px solid #EBEBEB; }
+  border: 3px solid #ebebeb; }
 
 @media only screen and (min-width: 490px) {
   .img-holder img {
