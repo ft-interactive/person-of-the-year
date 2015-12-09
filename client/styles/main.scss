@@ -45,10 +45,29 @@ body {
 // border: 2px solid #C0B6A9;
 
 /* White Rectangle: */
+
+.content {
+  margin: 0 1em;
+}
+
+.people-group {
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 1.5em;
+}
+
 .card {
+  display: block;
+  padding: .8rem;
+  margin: 0 auto;
+  max-width: 720px;
+  position: relative;
   background: #FFFBF7;
   box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
-  border-radius: 0px 0px 4px 4px;
+}
+
+.img-holder img {
+  width: 57px;
+  height: 57px;
 }
 
 /* Person of  the Year: */
@@ -77,30 +96,36 @@ body {
 
 
 /* Angela Merkel: */
-.winner_name {
+.winner .name {
   font-family: Metric-Semibold;
   font-size: 16px;
   color: #333333;
   line-height: 26px;
 }
 
+.img-holder,
+.card__body {
+  display: inline-block;
+}
+
+.card-body {
+  position: absolute;
+  top: 8px;
+}
+
+.name {
+  margin: 0;
+}
+
 /* Blurb: */
-.winner_blurb {
+.standfirst {
 font-family: FinancierDisplay-Regular;
 font-size: 16px;
 color: #505050;
 line-height: 22px;
 }
 
-/* RUNNERS-UP */
 
-/* In hac habitasse pla: */
-.runnerup_blurb{
-font-family: FinancierDisplay-Regular;
-font-size: 16px;
-color: #505050;
-line-height: 22px;
-}
 /* Kevin Mendoza: */
 /* font-family: Metric-Semibold;
 font-size: 16px;
@@ -155,4 +180,14 @@ line-height: 16px;
   line-height: 22px;
   /* arrow: */
   border: 3px solid #EBEBEB;
+}
+
+@media only screen and (min-width: 490px) {
+  .img-holder img {
+    width: 100px;
+    height: 100px;
+  } 
+  .winner .name {
+    font-size: 2em;
+  }
 }

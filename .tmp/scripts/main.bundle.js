@@ -214,7 +214,7 @@ var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<h1 class=\"main-title\">"
+  return "<h1 class=\"headline\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.title : stack1), depth0))
     + "</h1>\n<div class=\"main-image\"><img src=\"images/"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.mainpic : stack1), depth0))
@@ -227,7 +227,7 @@ var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "        <div id=\""
+  return "        <div class=\""
     + alias4(((helper = (helper = helpers.type || (depth0 != null ? depth0.type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"type","hash":{},"data":data}) : helper)))
     + "\" class=\"people-group "
     + alias4(((helper = (helper = helpers.type || (depth0 != null ? depth0.type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"type","hash":{},"data":data}) : helper)))
