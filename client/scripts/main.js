@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var groupNames = [];
   var groups = [];
   var dataset = spreadsheet.data;
+  var groupTitles = spreadsheet.groups;
 
   //put the dataset into groups and add the corresponding indicators
   dataset.forEach(function (row) {
@@ -33,7 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
     groups[groupIndex].person.push(row);
   });
 
+  // groupTitles.forEach(function (row, index) {
+  //   console.log(index)
+  //   groups.push({
+  //     grouptitle: row.heading
+  //   })
+  // });
+
   console.log(groups);
+  console.log(groupNames);
   document.querySelector('main').innerHTML = mainTemplate(spreadsheet);
 
   var peopleHTML = peopleTemplate(groups, {

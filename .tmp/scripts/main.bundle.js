@@ -142,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var groupNames = [];
   var groups = [];
   var dataset = spreadsheet.data;
+  var groupTitles = spreadsheet.groups;
 
   //put the dataset into groups and add the corresponding indicators
   dataset.forEach(function (row) {
@@ -159,7 +160,15 @@ document.addEventListener('DOMContentLoaded', function () {
     groups[groupIndex].person.push(row);
   });
 
+  // groupTitles.forEach(function (row, index) {
+  //   console.log(index)
+  //   groups.push({
+  //     grouptitle: row.heading
+  //   })
+  // });
+
   console.log(groups);
+  console.log(groupNames);
   document.querySelector('main').innerHTML = (0, _main2.default)(spreadsheet);
 
   var peopleHTML = (0, _people2.default)(groups, {
@@ -199,7 +208,9 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
 
   return "<div class=\"card\">\n	"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.picurl : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n	<div class=\"card__body\">\n			<h3 class=\"card__title name\">"
+    + "\n	<div class=\"card__body\">\n      <p class=\"year\">"
+    + alias4(((helper = (helper = helpers.year || (depth0 != null ? depth0.year : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"year","hash":{},"data":data}) : helper)))
+    + "</p>\n			<h3 class=\"card__title name\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "</h3> \n			<p class=\"job\">"
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
@@ -229,7 +240,7 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
 
   return "        <div class=\"people-group "
     + container.escapeExpression(((helper = (helper = helpers.type || (depth0 != null ? depth0.type : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"type","hash":{},"data":data}) : helper)))
-    + "\">\n          <div class=\"group-heading\"></div>\n"
+    + "\">\n          <div class=\"group-heading\">Group heading here</div>\n"
     + ((stack1 = container.invokePartial(partials.person_group,depth0,{"name":"person_group","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "        </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {

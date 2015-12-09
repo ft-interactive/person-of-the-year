@@ -2482,6 +2482,10 @@ body {
 .masthead {
   height: 18px; }
 
+.winner .year,
+.runnerup .year {
+  display: none; }
+
 /* Hamburger: */
 .hamburger_menu {
   width: 20px;
@@ -2667,7 +2671,9 @@ line-height: 16px;
     line-height: 22px; }
   .standfirst {
     font-size: 22px;
-    line-height: 26px; } }
+    line-height: 26px; }
+  .winner .name {
+    font-size: 1.5em; } }
 
 @media (min-width: 61.25em) {
   .headline {
@@ -2681,6 +2687,8 @@ line-height: 16px;
     margin-right: 100px; }
   .img-holder img {
     width: 100px;
-    height: 100px; } }
+    height: 100px; }
+  .winner .name {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
