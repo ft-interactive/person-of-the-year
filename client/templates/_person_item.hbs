@@ -1,8 +1,8 @@
 <div class="card">
-	<div><img src="" class="card__img" /></div>	
+	{{#if picurl}}<div class="img-holder"><img src="images/{{picurl}}" class="card__img" /></div>	{{/if}}
 	<div class="card__body">
-			<h3 class="card__title name"></h3> 
-			<p class="job"></p>
-			<p class="standfirst"></p>
+			<h3 class="card__title name">{{name}}</h3> 
+			<p class="job">{{description}}</p>
+			<p class="standfirst">{{headline}}</p>
 	</div>
 </div>

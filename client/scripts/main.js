@@ -28,26 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
-
   dataset.forEach(function (row) {
     var groupIndex = groupNames.indexOf(row.type);
     groups[groupIndex].person.push(row);
   });
 
   console.log(groups);
-  document.querySelector('main').innerHTML = mainTemplate(dataset);
-
-var indicators = require('../templates/indicators.hbs');
-
-  var indicatorsHTML = indicators(groups, {
-    partials: {
-      indicator_item: require('../templates/_indicator_item.hbs'),
-      indicator_group: require('../templates/_indicator_group.hbs'),
-    }
-  });
-
- $('.container').html(indicatorsHTML);
+  document.querySelector('main').innerHTML = mainTemplate(spreadsheet);
 
   var peopleHTML = peopleTemplate(groups, {
     partials: {
@@ -56,6 +43,7 @@ var indicators = require('../templates/indicators.hbs');
     }
   });
   
+
   document.querySelector('.content').innerHTML = peopleHTML;
 
 
