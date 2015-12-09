@@ -27,3 +27,132 @@ body {
     .masthead {
       height: 18px;
     }
+
+
+/* Hamburger: */
+.hamburger_menu {
+  width:20px;
+  height:14px;
+  border: 2px solid #C0B6A9;
+}
+
+
+/* Line Copy 3: */
+// border: 2px solid #C0B6A9;
+/* Line Copy 4: */
+// border: 2px solid #C0B6A9;
+/* arrow: */
+// border: 2px solid #C0B6A9;
+
+/* White Rectangle: */
+.card {
+  background: #FFFBF7;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Person of  the Year: */
+.headline {
+  font-family: FinancierDisplay-Regular;
+  font-size: 27px;
+  color: #FFFFFF;
+  line-height: 26px;
+  width:246px;
+  height:44px;
+  background: #4A4A4A;
+}
+
+/* 2015: THE WINNER: */
+.winner_section_title {
+  font-family: Metric-Semibold;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+}
+/* Line: */
+//border: 2px solid #979797;
+
+
+
+
+/* Angela Merkel: */
+.winner_name {
+  font-family: Metric-Semibold;
+  font-size: 16px;
+  color: #333333;
+  line-height: 26px;
+}
+
+/* Blurb: */
+.winner_blurb {
+font-family: FinancierDisplay-Regular;
+font-size: 16px;
+color: #505050;
+line-height: 22px;
+}
+
+/* RUNNERS-UP */
+
+/* In hac habitasse pla: */
+.runnerup_blurb{
+font-family: FinancierDisplay-Regular;
+font-size: 16px;
+color: #505050;
+line-height: 22px;
+}
+/* Kevin Mendoza: */
+/* font-family: Metric-Semibold;
+font-size: 16px;
+color: #333333;
+line-height: 16px;
+ */
+// PREVIOUS WINNERS
+/* SECTION TITLE: */
+.section_title {
+font-family: FinancierDisplay-Regular;
+font-size: 16px;
+color: #505050;
+}
+/* PREVIOUS WINNER NAME: */
+.previous_name {
+font-family: Metric-Semibold;
+font-size: 16px;
+color: #333333;
+line-height: 16px;
+}
+
+/* YEAR: */
+.year {
+  font-family: Metric-Semibold;
+  font-size: 14px;
+  color: #9B164F;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+// LINK TO FULL PROFILE
+
+/* Full profile: */
+.full-profile {
+  font-family: Metric-Regular;
+  font-size: 16px;
+  color: #333333;
+  line-height: 22px;
+};
+/* arrow: */
+//border: 3px solid #9B164F;
+
+.full_profile:hover {
+  /* Rectangle 7:hover: */
+  background: #9B164F;
+  width:116px;
+  height:28px;
+  /* Full profile: */
+  font-family: Metric-Regular;
+  font-size: 16px;
+  color: #EBEBEB;
+  line-height: 22px;
+  /* arrow: */
+  border: 3px solid #EBEBEB;
+}
