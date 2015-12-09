@@ -42,10 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       person_group
     }
   });
-  
 
   document.querySelector('.content').innerHTML = peopleHTML;
-
-
 
 });
