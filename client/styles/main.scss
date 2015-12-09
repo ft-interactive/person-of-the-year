@@ -1,6 +1,8 @@
+$o-grid-is-silent:  false;
 @import 'o-fonts/main';
 @import 'o-colors/main';
 @import 'o-footer/main';
+@import 'o-grid/main';
 
 @import 'fonts';
 
@@ -50,38 +52,69 @@ body {
   margin: 0 1em;
 }
 
+.main-image {
+  text-align: center;
+  margin: 0 16px -4px;
+  > img {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
 .people-group {
+  background: #FFFBF7;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
   margin-bottom: 1.5em;
+
 }
 
 .card {
-  display: block;
-  padding: .8rem;
-  margin: 0 auto;
-  max-width: 720px;
+  // display: block;
+  padding: 1.4em 1em;
   position: relative;
-  background: #FFFBF7;
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9decf;
 }
+
+ p {
+    margin: 4px 0;
+  }
 
 .people-group .card:last-child{
   border-radius: 0px 0px 4px 4px;
 }
 
-.img-holder img {
-  width: 57px;
-  height: 57px;
+
+.img-holder {
+  float: left;
+  margin-left: 10px;
+  > img {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+.card__body {
+  margin-right: 10px;
 }
 
 /* Person of  the Year: */
 .headline {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
   font-size: 27px;
   color: #FFFFFF;
-  line-height: 26px;
-  width:246px;
-  height:44px;
+  line-height: 40px;
   background: #4A4A4A;
+  font-weight: normal;
+  text-align: center;
+  text-align: center;
+  position: relative;
+  margin: 24px auto -12px;
+  max-width:300px;
+  padding: 8px 10px;
 }
 
 /* 2015: THE WINNER: */
@@ -91,6 +124,10 @@ body {
   color: #333333;
   letter-spacing: 0.1em;
   line-height: 14px;
+}
+
+.winner .card__body {
+  margin-left: 10px;
 }
 /* Line: */
 //border: 2px solid #979797;
@@ -108,21 +145,14 @@ body {
   font-weight: 500;
 }
 
-.img-holder,
-.card__body {
-  display: inline-block;
-}
-
 .img-holder {
   margin-right: 1em;
+  overflow: hidden;
 }
 .runnerup .card__body,
 .previous .card__body {
-  position: absolute;
-  top: 8px;
-  >p {
-    margin: 0;
-  }
+  overflow: hidden;
+
 }
 
 .job {
@@ -130,6 +160,7 @@ body {
   font-weight: 500;
   color: #a7a59b;
   letter-spacing: 0.03em;
+  font-size: 16px;
 }
 /* Blurb: */
 .standfirst {
@@ -196,12 +227,66 @@ line-height: 16px;
   border: 3px solid #ebebeb;
 }
 
-@media only screen and (min-width: 490px) {
+@include oGridRespondTo(S) {
+  .img-holder,
+  .winner .card__body {
+    margin-left: 20px
+  }
   .img-holder img {
     width: 100px;
     height: 100px;
   } 
-  .winner .name {
+
+}
+
+
+ @include oGridRespondTo(M) {
+  .headline {
+    max-width: 400px;
+    padding: 12px 30px;
     font-size: 2em;
+  }
+  .img-holder,
+  .winner .card__body {
+    margin-left: 50px
+  }
+  .card__body, {
+    margin-right: 50px
+  }
+
+  .img-holder img {
+    width: 100px;
+    height: 100px;
+  }
+  .job {
+    font-size: 18px;
+    line-height: 22px;
+    }
+  .name {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .standfirst {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+ @include oGridRespondTo(L) {
+  .headline {
+    max-width: 400px;
+    padding: 16px 40px;
+    font-size: 2.5em;
+  }
+  .img-holder,
+  .winner .card__body {
+    margin-left: 100px
+  }
+  .card__body {
+    margin-right: 100px
+  }
+  .img-holder img {
+    width: 100px;
+    height: 100px;
   }
 }

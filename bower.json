@@ -7,5 +7,8 @@
     "o-hoverable": "~1.1.0",
     "o-fonts": "~1.6.4",
     "o-footer": "~4.0.0"
+  },
+  "devDependencies": {
+    "o-grid": "~4.0.5"
   }
 }

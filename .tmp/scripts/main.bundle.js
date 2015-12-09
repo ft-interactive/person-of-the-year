@@ -218,7 +218,7 @@ module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":f
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.title : stack1), depth0))
     + "</h1>\n<div class=\"main-image\"><img src=\"images/"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.mainpic : stack1), depth0))
-    + "\" alt=\"\"/></div>\n<div class=\"content\"></div>";
+    + "\" alt=\"\"/></div>\n<div class=\"content\" class=\"o-grid-row\"></div>";
 },"useData":true});
 
 },{"hbsfy/runtime":"/Users/steve.bernard/code/FT-person-of-the-year/node_modules/hbsfy/runtime.js"}],"/Users/steve.bernard/code/FT-person-of-the-year/client/templates/people.hbs":[function(require,module,exports){
@@ -229,7 +229,7 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
 
   return "        <div class=\"people-group "
     + container.escapeExpression(((helper = (helper = helpers.type || (depth0 != null ? depth0.type : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"type","hash":{},"data":data}) : helper)))
-    + "\">\n"
+    + "\">\n          <div class=\"group-heading\"></div>\n"
     + ((stack1 = container.invokePartial(partials.person_group,depth0,{"name":"person_group","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "        </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
