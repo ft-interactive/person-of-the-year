@@ -15,6 +15,9 @@ body {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
 }
 
+main {
+  padding: 0 10px;
+}
 
 .site-header {
   padding: 18px 0 14px;
@@ -45,6 +48,10 @@ body {
   border: 2px solid #c0b6a9;
 }
 
+.winner .job {
+  font-size: 1.25em;
+  line-height: 30px;
+}
 
 // Line Copy 3: */
 // border: 2px solid #C0B6A9;
@@ -55,13 +62,9 @@ body {
 
 // White Rectangle: */
 
-.content {
-  margin: 0 10px;
-}
-
 .main-image {
   text-align: center;
-  margin: 0 10px -4px;
+  margin: 0 0 -4px;
 
   > img {
     max-width: 800px;
@@ -95,7 +98,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 60px;
-    border: 2px solid #979797;
+    border: 1px solid #979797;
     content: '';
     margin-top: 0.75em;
   }
@@ -103,7 +106,7 @@ body {
 
 .card {
   // display: block;
-  padding: 1.4em 1em;
+  padding: 1.25em 1em;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -117,10 +120,12 @@ body {
 .img-holder {
   float: left;
   margin-left: 10px;
+  border-radius: 4px;
 
   > img {
     width: 57px;
     height: 57px;
+    vertical-align:bottom; 
   }
 }
 
@@ -184,15 +189,18 @@ body {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
   font-weight: 500;
   color: #a7a59b;
-  letter-spacing: 0.03em;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 // Blurb: */
 .standfirst {
   font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
   font-size: 16px;
-  color: #505050;
+  color: #333333;
   line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -385,11 +393,6 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     margin-left: 20px;
   }
 
-  .img-holder img {
-    width: 100px;
-    height: 100px;
-  } 
-
   .card {
     padding-right: 50px;
   }
@@ -410,8 +413,8 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   }
 
   .img-holder img {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
   }
 
   .job {
@@ -439,6 +442,10 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
       display: block;
       width: 80px;
     }
+  }
+  .card {
+    padding-top: 2.1em;
+    padding-bottom: 2.1em;
   }
 }
 

@@ -2470,6 +2470,9 @@ body {
   border: 0;
   font-family: MetricWeb, sans-serif; }
 
+main {
+  padding: 0 10px; }
+
 .site-header {
   padding: 18px 0 14px;
   text-align: center;
@@ -2491,12 +2494,13 @@ body {
   height: 14px;
   border: 2px solid #c0b6a9; }
 
-.content {
-  margin: 0 10px; }
+.winner .job {
+  font-size: 1.25em;
+  line-height: 30px; }
 
 .main-image {
   text-align: center;
-  margin: 0 10px -4px; }
+  margin: 0 0 -4px; }
   .main-image > img {
     max-width: 800px;
     width: 100%; }
@@ -2522,12 +2526,12 @@ body {
     display: block;
     margin: 0 auto;
     width: 60px;
-    border: 2px solid #979797;
+    border: 1px solid #979797;
     content: '';
     margin-top: 0.75em; }
 
 .card {
-  padding: 1.4em 1em;
+  padding: 1.25em 1em;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -2538,10 +2542,12 @@ p {
 
 .img-holder {
   float: left;
-  margin-left: 10px; }
+  margin-left: 10px;
+  border-radius: 4px; }
   .img-holder > img {
     width: 57px;
-    height: 57px; }
+    height: 57px;
+    vertical-align: bottom; }
 
 .headline {
   font-family: FinancierDisplayWeb, serif;
@@ -2588,14 +2594,17 @@ p {
   font-family: MetricWeb, sans-serif;
   font-weight: 500;
   color: #a7a59b;
-  letter-spacing: 0.03em;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .standfirst {
   font-family: FinancierDisplayWeb, serif;
   font-size: 16px;
-  color: #505050;
-  line-height: 22px; }
+  color: #333333;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .section_title {
   font-family: MetricWeb, sans-serif;
@@ -2739,9 +2748,6 @@ p {
   .img-holder,
   .winner .card__body {
     margin-left: 20px; }
-  .img-holder img {
-    width: 100px;
-    height: 100px; }
   .card {
     padding-right: 50px; } }
 
@@ -2755,8 +2761,8 @@ p {
   .winner .card__body {
     margin-left: 50px; }
   .img-holder img {
-    width: 100px;
-    height: 100px; }
+    width: 85px;
+    height: 85px; }
   .job {
     font-size: 18px;
     line-height: 22px; }
@@ -2772,7 +2778,10 @@ p {
     font-size: 1.25em; }
     .group-heading:after {
       display: block;
-      width: 80px; } }
+      width: 80px; }
+  .card {
+    padding-top: 2.1em;
+    padding-bottom: 2.1em; } }
 
 @media (min-width: 61.25em) {
   .headline {
