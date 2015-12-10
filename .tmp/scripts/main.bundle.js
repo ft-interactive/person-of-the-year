@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/sdbernard/Sites/person-of-the-year/bower_components/o-hoverable/main.js":[function(require,module,exports){
 /* globals DocumentTouch */
 'use strict';
 
@@ -102,7 +102,7 @@ document.addEventListener('o.DOMContentLoaded', Hoverable.init);
 
 module.exports = Hoverable;
 
-},{}],2:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/client/scripts/main.js":[function(require,module,exports){
 'use strict';
 
 var _oHoverable = require("./../../bower_components/o-hoverable/main.js");
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.previous .group-heading').innerHTML = groupTitles[2].value;
 });
 
-},{"../templates/_person_group.hbs":3,"../templates/_person_item.hbs":4,"../templates/main.hbs":5,"../templates/people.hbs":6,"./../../bower_components/o-hoverable/main.js":1,"fastclick":7}],3:[function(require,module,exports){
+},{"../templates/_person_group.hbs":"/Users/sdbernard/Sites/person-of-the-year/client/templates/_person_group.hbs","../templates/_person_item.hbs":"/Users/sdbernard/Sites/person-of-the-year/client/templates/_person_item.hbs","../templates/main.hbs":"/Users/sdbernard/Sites/person-of-the-year/client/templates/main.hbs","../templates/people.hbs":"/Users/sdbernard/Sites/person-of-the-year/client/templates/people.hbs","./../../bower_components/o-hoverable/main.js":"/Users/sdbernard/Sites/person-of-the-year/bower_components/o-hoverable/main.js","fastclick":"/Users/sdbernard/Sites/person-of-the-year/node_modules/fastclick/lib/fastclick.js"}],"/Users/sdbernard/Sites/person-of-the-year/client/templates/_person_group.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
@@ -196,7 +196,7 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
   return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.person : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 
-},{"hbsfy/runtime":27}],4:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/hbsfy/runtime.js"}],"/Users/sdbernard/Sites/person-of-the-year/client/templates/_person_item.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
@@ -205,6 +205,12 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
   return "<div class=\"img-holder\"><img src=\"images/"
     + container.escapeExpression(((helper = (helper = helpers.picurl || (depth0 != null ? depth0.picurl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"picurl","hash":{},"data":data}) : helper)))
     + "\" class=\"card__img\" /></div>	";
+},"3":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<a class=\"story-promo\" href=\""
+    + container.escapeExpression(((helper = (helper = helpers.linkurl || (depth0 != null ? depth0.linkurl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"linkurl","hash":{},"data":data}) : helper)))
+    + "\"><span class=\"link\">Find out</span></a>";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -218,10 +224,12 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
     + "</p>\n			<p class=\"standfirst\">"
     + alias4(((helper = (helper = helpers.headline || (depth0 != null ? depth0.headline : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"headline","hash":{},"data":data}) : helper)))
-    + "</p>\n	</div>\n</div>";
+    + "</p>\n	</div>\n	"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.linkurl : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n</div>";
 },"useData":true});
 
-},{"hbsfy/runtime":27}],5:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/hbsfy/runtime.js"}],"/Users/sdbernard/Sites/person-of-the-year/client/templates/main.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -234,7 +242,7 @@ module.exports = HandlebarsCompiler.template({"compiler":[7,">= 4.0.0"],"main":f
     + "\" alt=\"\"/></div>\n<div class=\"content\" class=\"o-grid-row\"></div>";
 },"useData":true});
 
-},{"hbsfy/runtime":27}],6:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/hbsfy/runtime.js"}],"/Users/sdbernard/Sites/person-of-the-year/client/templates/people.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
@@ -253,7 +261,7 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
     + "</div>\n";
 },"usePartial":true,"useData":true});
 
-},{"hbsfy/runtime":27}],7:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/hbsfy/runtime.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/fastclick/lib/fastclick.js":[function(require,module,exports){
 ;(function () {
 	'use strict';
 
@@ -1096,7 +1104,7 @@ module.exports = HandlebarsCompiler.template({"1":function(container,depth0,help
 	}
 }());
 
-},{}],8:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars.runtime.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1164,7 +1172,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars/base":9,"./handlebars/exception":12,"./handlebars/no-conflict":22,"./handlebars/runtime":23,"./handlebars/safe-string":24,"./handlebars/utils":25}],9:[function(require,module,exports){
+},{"./handlebars/base":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/base.js","./handlebars/exception":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js","./handlebars/no-conflict":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/no-conflict.js","./handlebars/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/runtime.js","./handlebars/safe-string":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/safe-string.js","./handlebars/utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/base.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1270,7 +1278,7 @@ exports.createFrame = _utils.createFrame;
 exports.logger = _logger2['default'];
 
 
-},{"./decorators":10,"./exception":12,"./helpers":13,"./logger":21,"./utils":25}],10:[function(require,module,exports){
+},{"./decorators":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/decorators.js","./exception":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js","./helpers":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers.js","./logger":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/logger.js","./utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/decorators.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1288,7 +1296,7 @@ function registerDefaultDecorators(instance) {
 }
 
 
-},{"./decorators/inline":11}],11:[function(require,module,exports){
+},{"./decorators/inline":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/decorators/inline.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/decorators/inline.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1319,7 +1327,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":25}],12:[function(require,module,exports){
+},{"../utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1361,7 +1369,7 @@ exports['default'] = Exception;
 module.exports = exports['default'];
 
 
-},{}],13:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1409,7 +1417,7 @@ function registerDefaultHelpers(instance) {
 }
 
 
-},{"./helpers/block-helper-missing":14,"./helpers/each":15,"./helpers/helper-missing":16,"./helpers/if":17,"./helpers/log":18,"./helpers/lookup":19,"./helpers/with":20}],14:[function(require,module,exports){
+},{"./helpers/block-helper-missing":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/block-helper-missing.js","./helpers/each":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js","./helpers/helper-missing":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js","./helpers/if":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/if.js","./helpers/log":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/log.js","./helpers/lookup":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/lookup.js","./helpers/with":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/with.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/block-helper-missing.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1450,7 +1458,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":25}],15:[function(require,module,exports){
+},{"../utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1546,7 +1554,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":12,"../utils":25}],16:[function(require,module,exports){
+},{"../exception":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js","../utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1573,7 +1581,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":12}],17:[function(require,module,exports){
+},{"../exception":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/if.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1604,7 +1612,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":25}],18:[function(require,module,exports){
+},{"../utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/log.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1632,7 +1640,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],19:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/lookup.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1646,7 +1654,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],20:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/helpers/with.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1681,7 +1689,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":25}],21:[function(require,module,exports){
+},{"../utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/logger.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1730,7 +1738,7 @@ exports['default'] = logger;
 module.exports = exports['default'];
 
 
-},{"./utils":25}],22:[function(require,module,exports){
+},{"./utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/no-conflict.js":[function(require,module,exports){
 (function (global){
 /* global window */
 'use strict';
@@ -1754,7 +1762,8 @@ module.exports = exports['default'];
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],23:[function(require,module,exports){
+
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/runtime.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2048,7 +2057,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 }
 
 
-},{"./base":9,"./exception":12,"./utils":25}],24:[function(require,module,exports){
+},{"./base":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/base.js","./exception":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/safe-string.js":[function(require,module,exports){
 // Build out our basic SafeString type
 'use strict';
 
@@ -2065,7 +2074,7 @@ exports['default'] = SafeString;
 module.exports = exports['default'];
 
 
-},{}],25:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars/utils.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2191,12 +2200,15 @@ function appendContextPath(contextPath, id) {
 }
 
 
-},{}],26:[function(require,module,exports){
+},{}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/runtime.js":[function(require,module,exports){
 // Create a simple path alias to allow browserify to resolve
 // the runtime on a supported path.
 module.exports = require('./dist/cjs/handlebars.runtime')['default'];
 
-},{"./dist/cjs/handlebars.runtime":8}],27:[function(require,module,exports){
+},{"./dist/cjs/handlebars.runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/dist/cjs/handlebars.runtime.js"}],"/Users/sdbernard/Sites/person-of-the-year/node_modules/hbsfy/runtime.js":[function(require,module,exports){
 module.exports = require("handlebars/runtime")["default"];
 
-},{"handlebars/runtime":26}]},{},[2]);
+},{"handlebars/runtime":"/Users/sdbernard/Sites/person-of-the-year/node_modules/handlebars/runtime.js"}]},{},["/Users/sdbernard/Sites/person-of-the-year/client/scripts/main.js"])
+
+
+//# sourceMappingURL=main.bundle.js.map

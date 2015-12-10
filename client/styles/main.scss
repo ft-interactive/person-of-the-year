@@ -234,6 +234,34 @@ line-height: 16px;
   border: 3px solid #ebebeb;
 }
 
+.story-promo {
+  text-decoration: none;
+  color: oColorsGetPaletteColor('grey-tint5');
+  line-height: 1.2em;
+  position: relative;
+  bottom: 0;
+
+  & > span.link {
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    &:after {
+      content: " ";
+      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=333333,333333&source=ig_wrr') no-repeat center center;
+      background-size: 20px 20px;
+      position: absolute;
+      bottom: -9px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      margin: 0 7px 8px 0;
+    }
+  }
+}
+
 @include oGridRespondTo(S) {
   .img-holder,
   .winner .card__body {
