@@ -125,7 +125,7 @@ main {
   > img {
     width: 57px;
     height: 57px;
-    vertical-align:bottom; 
+    vertical-align: bottom; 
   }
 }
 
@@ -264,20 +264,21 @@ main {
   bottom: 0;
 
   & > .link {
-    display: block;
+    // display: block;
     text-align: right;
     margin-right: 30px;
     margin-top: 10px;
     font-weight: 400;
     font-size: 1rem;
+    float: right;
 
     &:after {
       content: " ";
       background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=9B164F,9B164F&source=ig_wrr') no-repeat center center;
       background-size: 20px 20px;
       position: absolute;
-      bottom: -9px;
-      right: 0;
+      bottom: -34px;
+      // right: 0;
       width: 20px;
       height: 20px;
       margin: 0 7px 8px 0;
@@ -473,4 +474,18 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   .winner .name {
     font-size: 2em;
   }
+}
+
+// fix for position of profile arrow in link on webkit browsers
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+  .story-promo {
+
+    & > .link {
+
+      &:after {
+        bottom: -38px;
+      }
+    }
+  }  
 }
