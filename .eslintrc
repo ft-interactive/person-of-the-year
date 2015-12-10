@@ -10,3 +10,4 @@ rules:
   comma-dangle: 0
   no-inline-comments: 0
   camelcase: 0
+  no-undef: 0

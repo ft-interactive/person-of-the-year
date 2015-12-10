@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var dataset = spreadsheet.data;
   var groupTitles = spreadsheet.groups;
 
-  //put the dataset into groups and add the corresponding indicators
+  // put the dataset into groups and add the corresponding indicators
   dataset.forEach(function (row) {
     if (groupNames.indexOf(row.type) === -1) {
       groupNames.push(row.type);
@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
       person_group
     }
   });
-
   document.querySelector('.content').innerHTML = peopleHTML;
-
+  document.querySelector('.winner .group-heading').innerHTML = groupTitles[0].value;
+  document.querySelector('.runnerup .group-heading').innerHTML = groupTitles[1].value;
+  document.querySelector('.previous .group-heading').innerHTML = groupTitles[2].value;
 });
