@@ -2548,9 +2548,6 @@ p {
     width: 57px;
     height: 57px; }
 
-.card__body {
-  margin-right: 10px; }
-
 /* Person of  the Year: */
 .headline {
   font-family: FinancierDisplayWeb, serif;
@@ -2562,7 +2559,7 @@ p {
   text-align: center;
   text-align: center;
   position: relative;
-  margin: 24px auto -12px;
+  margin: 24px auto -16px;
   max-width: 300px;
   padding: 8px 10px;
   -webkit-font-smoothing: antialiased;
@@ -2738,18 +2735,19 @@ line-height: 16px;
     margin-left: 20px; }
   .img-holder img {
     width: 100px;
-    height: 100px; } }
+    height: 100px; }
+  .card {
+    padding-right: 50px; } }
 
 @media (min-width: 46.25em) {
   .headline {
     max-width: 400px;
     padding: 12px 30px;
-    font-size: 2em; }
+    font-size: 2em;
+    margin-bottom: -20px; }
   .img-holder,
   .winner .card__body {
     margin-left: 50px; }
-  .card__body {
-    margin-right: 50px; }
   .img-holder img {
     width: 100px;
     height: 100px; }
@@ -2774,12 +2772,13 @@ line-height: 16px;
   .headline {
     max-width: 400px;
     padding: 16px 40px;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    margin-bottom: -24px; }
   .img-holder,
   .winner .card__body {
     margin-left: 100px; }
-  .card__body {
-    margin-right: 100px; }
+  .card {
+    padding-right: 100px; }
   .img-holder img {
     width: 100px;
     height: 100px; }
