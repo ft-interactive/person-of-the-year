@@ -1,0 +1,333 @@
+$o-grid-is-silent:  false;
+@import 'o-fonts/main';
+@import 'o-colors/main';
+@import 'o-footer/main';
+@import 'o-grid/main';
+
+@import 'fonts';
+
+
+body {
+  @include oColorsFor(page, background);
+
+  margin: 0;
+  border: 0;
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+}
+
+
+.site-header {
+  padding: 18px 0 14px;
+  text-align: center;
+  border-bottom: 1px solid #e9decf;
+
+  > a {
+    opacity: 0.75;
+    &:hover { opacity: 1; }
+  }
+}
+    .masthead {
+      height: 18px;
+    }
+
+.winner .year,
+.runnerup .year {
+  display: none;
+}
+/* Hamburger: */
+.hamburger_menu {
+  width:20px;
+  height:14px;
+  border: 2px solid #C0B6A9;
+}
+
+
+/* Line Copy 3: */
+// border: 2px solid #C0B6A9;
+/* Line Copy 4: */
+// border: 2px solid #C0B6A9;
+/* arrow: */
+// border: 2px solid #C0B6A9;
+
+/* White Rectangle: */
+
+.content {
+  margin: 0 1em;
+}
+
+.main-image {
+  text-align: center;
+  margin: 0 16px -4px;
+  > img {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+.people-group {
+  background: #FFFBF7;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+  margin-bottom: 1.5em;
+}
+
+.group-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card {
+  // display: block;
+  padding: 1.4em 1em;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9decf;
+}
+
+ p {
+    margin: 4px 0;
+  }
+
+.people-group .card:last-child{
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+.img-holder {
+  float: left;
+  margin-left: 10px;
+  > img {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+.card__body {
+  margin-right: 10px;
+}
+
+/* Person of  the Year: */
+.headline {
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+  font-size: 27px;
+  color: #FFFFFF;
+  line-height: 40px;
+  background: #4A4A4A;
+  font-weight: normal;
+  text-align: center;
+  text-align: center;
+  position: relative;
+  margin: 24px auto -12px;
+  max-width:300px;
+  padding: 8px 10px;
+}
+
+/* 2015: THE WINNER: */
+.winner_section_title {
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+}
+
+.winner .card__body {
+  margin-left: 10px;
+}
+/* Line: */
+//border: 2px solid #979797;
+
+
+
+
+/* Angela Merkel: */
+.name {
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-size: 20px;
+  color: #333333;
+  line-height: 26px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.img-holder {
+  margin-right: 1em;
+  overflow: hidden;
+}
+.runnerup .card__body,
+.previous .card__body {
+  overflow: hidden;
+
+}
+
+.job {
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-weight: 500;
+  color: #a7a59b;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+/* Blurb: */
+.standfirst {
+font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+font-size: 16px;
+color: #505050;
+line-height: 22px;
+}
+
+
+/* Kevin Mendoza: */
+/* font-famil'y: MetricWeb, serif';
+font-size: 16px;
+color: #333333;
+line-height: 16px;
+ */
+// PREVIOUS WINNERS
+/* SECTION TITLE: */
+.section_title {
+font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+font-size: 16px;
+color: #505050;
+}
+/* PREVIOUS WINNER NAME: */
+.previous_name {
+font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+font-size: 16px;
+color: #333333;
+line-height: 16px;
+}
+
+/* YEAR: */
+.year {
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-size: 14px;
+  color: #9b164f;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+// LINK TO FULL PROFILE
+
+/* Full profile: */
+.full-profile {
+  font-family: Metric-Regular;
+  font-size: 16px;
+  color: #333333;
+  line-height: 22px;
+};
+/* arrow: */
+//border: 3px solid #9B164F;
+
+.full_profile:hover {
+  /* Rectangle 7:hover: */
+  background: #9b164f;
+  width:116px;
+  height:28px;
+  /* Full profile: */
+  font-family: Metric-Regular;
+  font-size: 16px;
+  color: #ebebeb;
+  line-height: 22px;
+  /* arrow: */
+  border: 3px solid #ebebeb;
+}
+
+.story-promo {
+  text-decoration: none;
+  color: oColorsGetPaletteColor('grey-tint5');
+  line-height: 1.2em;
+  position: relative;
+  bottom: 0;
+
+  & > span.link {
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    &:after {
+      content: " ";
+      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=333333,333333&source=ig_wrr') no-repeat center center;
+      background-size: 20px 20px;
+      position: absolute;
+      bottom: -9px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      margin: 0 7px 8px 0;
+    }
+  }
+}
+
+@include oGridRespondTo(S) {
+  .img-holder,
+  .winner .card__body {
+    margin-left: 20px
+  }
+  .img-holder img {
+    width: 100px;
+    height: 100px;
+  } 
+
+}
+
+
+ @include oGridRespondTo(M) {
+  .headline {
+    max-width: 400px;
+    padding: 12px 30px;
+    font-size: 2em;
+  }
+  .img-holder,
+  .winner .card__body {
+    margin-left: 50px
+  }
+  .card__body, {
+    margin-right: 50px
+  }
+
+  .img-holder img {
+    width: 100px;
+    height: 100px;
+  }
+  .job {
+    font-size: 18px;
+    line-height: 22px;
+    }
+  .name {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .standfirst {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .winner .name {
+    font-size: 1.5em;
+  }
+}
+
+ @include oGridRespondTo(L) {
+  .headline {
+    max-width: 400px;
+    padding: 16px 40px;
+    font-size: 2.5em;
+  }
+  .img-holder,
+  .winner .card__body {
+    margin-left: 100px
+  }
+  .card__body {
+    margin-right: 100px
+  }
+  .img-holder img {
+    width: 100px;
+    height: 100px;
+  }
+  .winner .name {
+    font-size: 2em;
+  }
+}
