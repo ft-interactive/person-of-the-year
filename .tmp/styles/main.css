@@ -2681,6 +2681,38 @@ line-height: 16px;
       height: 20px;
       margin: 0 7px 8px 0; }
 
+.winner .story-promo {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1.4em;
+  float: right; }
+  .winner .story-promo > span.link {
+    display: block;
+    background-color: #9b164f;
+    text-align: left;
+    margin-right: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 114px;
+    font-weight: 500;
+    padding-left: 16px;
+    height: 28px;
+    line-height: 26px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .winner .story-promo > span.link:after {
+      content: " ";
+      background: url("https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr") no-repeat center center;
+      background-size: 20px 20px;
+      position: absolute;
+      bottom: -4px;
+      right: 14px;
+      width: 20px;
+      height: 20px;
+      margin: 0 7px 8px 0; }
+
 .share-links-holder {
   max-width: 800px;
   margin: 0 auto; }
