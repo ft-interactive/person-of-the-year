@@ -52,12 +52,12 @@ body {
 /* White Rectangle: */
 
 .content {
-  margin: 0 1em;
+  margin: 0 10px;
 }
 
 .main-image {
   text-align: center;
-  margin: 0 16px -4px;
+  margin: 0 10px -4px;
   > img {
     max-width: 800px;
     width: 100%;
@@ -71,7 +71,13 @@ body {
   box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
   margin-bottom: 1.5em;
   padding-top: 1.5em;
+  border-radius: 0px 0px 4px 4px;
+  &.winner{
+    margin-bottom: 0;
+    border-radius: 0;
+  }
 }
+
 
 .group-heading {
   text-align: center;
@@ -101,11 +107,6 @@ body {
     margin: 4px 0;
   }
 
-.people-group .card:last-child{
-  border-radius: 0px 0px 4px 4px;
-}
-
-
 .img-holder {
   float: left;
   margin-left: 10px;
@@ -133,6 +134,8 @@ body {
   margin: 24px auto -12px;
   max-width:300px;
   padding: 8px 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 2015: THE WINNER: */
@@ -380,6 +383,13 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   .winner .name {
     font-size: 1.5em;
   }
+  .group-heading {
+  font-size: 1.25em;
+  &:after {
+    display: block;
+    width: 80px;
+  }
+}
 }
 
  @include oGridRespondTo(L) {
