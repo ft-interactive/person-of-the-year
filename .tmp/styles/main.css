@@ -2486,16 +2486,11 @@ body {
 .runnerup .year {
   display: none; }
 
-/* Hamburger: */
 .hamburger_menu {
   width: 20px;
   height: 14px;
-  border: 2px solid #C0B6A9; }
+  border: 2px solid #c0b6a9; }
 
-/* Line Copy 3: */
-/* Line Copy 4: */
-/* arrow: */
-/* White Rectangle: */
 .content {
   margin: 0 10px; }
 
@@ -2507,13 +2502,13 @@ body {
     width: 100%; }
 
 .people-group {
-  background: #FFFBF7;
+  background: #fffbf7;
   max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.5em;
   padding-top: 1.5em;
-  border-radius: 0px 0px 4px 4px; }
+  border-radius: 0 0 4px 4px; }
   .people-group.winner {
     margin-bottom: 0;
     border-radius: 0; }
@@ -2548,15 +2543,13 @@ p {
     width: 57px;
     height: 57px; }
 
-/* Person of  the Year: */
 .headline {
   font-family: FinancierDisplayWeb, serif;
   font-size: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 40px;
-  background: #4A4A4A;
+  background: #4a4a4a;
   font-weight: normal;
-  text-align: center;
   text-align: center;
   position: relative;
   margin: 24px auto -16px;
@@ -2565,7 +2558,6 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* 2015: THE WINNER: */
 .winner_section_title {
   font-family: MetricWeb, sans-serif;
   font-size: 14px;
@@ -2576,8 +2568,6 @@ p {
 .winner .card__body {
   margin-left: 10px; }
 
-/* Line: */
-/* Angela Merkel: */
 .name {
   font-family: MetricWeb, sans-serif;
   font-size: 20px;
@@ -2601,33 +2591,23 @@ p {
   letter-spacing: 0.03em;
   font-size: 16px; }
 
-/* Blurb: */
 .standfirst {
   font-family: FinancierDisplayWeb, serif;
   font-size: 16px;
   color: #505050;
   line-height: 22px; }
 
-/* Kevin Mendoza: */
-/* font-famil'y: MetricWeb, serif';
-font-size: 16px;
-color: #333333;
-line-height: 16px;
- */
-/* SECTION TITLE: */
 .section_title {
   font-family: MetricWeb, sans-serif;
   font-size: 16px;
   color: #505050; }
 
-/* PREVIOUS WINNER NAME: */
 .previous_name {
   font-family: MetricWeb, sans-serif;
   font-size: 16px;
   color: #333333;
   line-height: 16px; }
 
-/* YEAR: */
 .year {
   font-family: MetricWeb, sans-serif;
   font-size: 14px;
@@ -2636,25 +2616,20 @@ line-height: 16px;
   line-height: 16px;
   font-weight: 500; }
 
-/* Full profile: */
 .full-profile {
   font-family: Metric-Regular;
   font-size: 16px;
   color: #333333;
   line-height: 22px; }
 
-/* arrow: */
 .full_profile:hover {
-  /* Rectangle 7:hover: */
   background: #9b164f;
   width: 116px;
   height: 28px;
-  /* Full profile: */
   font-family: Metric-Regular;
   font-size: 16px;
   color: #ebebeb;
   line-height: 22px;
-  /* arrow: */
   border: 3px solid #ebebeb; }
 
 .story-promo {
@@ -2663,14 +2638,14 @@ line-height: 16px;
   line-height: 1.2em;
   position: relative;
   bottom: 0; }
-  .story-promo > span.link {
+  .story-promo > .link {
     display: block;
     text-align: right;
     margin-right: 30px;
     margin-top: 10px;
     font-weight: 400;
     font-size: 1rem; }
-    .story-promo > span.link:after {
+    .story-promo > .link:after {
       content: " ";
       background: url("https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=9B164F,9B164F&source=ig_wrr") no-repeat center center;
       background-size: 20px 20px;
@@ -2686,13 +2661,12 @@ line-height: 16px;
   color: #ffffff;
   line-height: 1.4em;
   float: right; }
-  .winner .story-promo > span.link {
+  .winner .story-promo > .link {
     display: block;
     background-color: #9b164f;
     text-align: left;
     margin-right: 12px;
     margin-top: 10px;
-    font-weight: 400;
     font-size: 1rem;
     width: 114px;
     font-weight: 500;
@@ -2702,7 +2676,7 @@ line-height: 16px;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-    .winner .story-promo > span.link:after {
+    .winner .story-promo > .link:after {
       content: " ";
       background: url("https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr") no-repeat center center;
       background-size: 20px 20px;
@@ -2732,8 +2706,6 @@ line-height: 16px;
   padding-left: 0; }
   .share-links > ul > li {
     display: inline-block; }
-    .share-links > ul > li:not(:first-of-type) {
-      margin-left: 10px; }
 
 .share-links__link {
   display: block;

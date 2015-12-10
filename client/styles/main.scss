@@ -23,33 +23,37 @@ body {
 
   > a {
     opacity: 0.75;
-    &:hover { opacity: 1; }
-  }
-}
-    .masthead {
-      height: 18px;
+    
+    &:hover {
+      opacity: 1;
     }
+  }
+
+}
+  .masthead {
+    height: 18px;
+  }
 
 .winner .year,
 .runnerup .year {
   display: none;
 }
-/* Hamburger: */
+// Hamburger: */
 .hamburger_menu {
-  width:20px;
-  height:14px;
-  border: 2px solid #C0B6A9;
+  width: 20px;
+  height: 14px;
+  border: 2px solid #c0b6a9;
 }
 
 
-/* Line Copy 3: */
+// Line Copy 3: */
 // border: 2px solid #C0B6A9;
-/* Line Copy 4: */
+// Line Copy 4: */
 // border: 2px solid #C0B6A9;
-/* arrow: */
+// arrow: */
 // border: 2px solid #C0B6A9;
 
-/* White Rectangle: */
+// White Rectangle: */
 
 .content {
   margin: 0 10px;
@@ -58,6 +62,7 @@ body {
 .main-image {
   text-align: center;
   margin: 0 10px -4px;
+
   > img {
     max-width: 800px;
     width: 100%;
@@ -65,14 +70,15 @@ body {
 }
 
 .people-group {
-  background: #FFFBF7;
+  background: #fffbf7;
   max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.5em;
   padding-top: 1.5em;
-  border-radius: 0px 0px 4px 4px;
-  &.winner{
+  border-radius: 0 0 4px 4px;
+
+  &.winner {
     margin-bottom: 0;
     border-radius: 0;
   }
@@ -84,12 +90,13 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.1em;
+
   &:after {
     display: block;
     margin: 0 auto;
     width: 60px;
     border: 2px solid #979797;
-    content:'';
+    content: '';
     margin-top: 0.75em;
   }
 }
@@ -110,31 +117,31 @@ body {
 .img-holder {
   float: left;
   margin-left: 10px;
+
   > img {
     width: 57px;
     height: 57px;
   }
 }
 
-/* Person of  the Year: */
+// Person of  the Year: */
 .headline {
   font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
   font-size: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 40px;
-  background: #4A4A4A;
+  background: #4a4a4a;
   font-weight: normal;
-  text-align: center;
   text-align: center;
   position: relative;
   margin: 24px auto -16px;
-  max-width:300px;
+  max-width: 300px;
   padding: 4px 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 2015: THE WINNER: */
+// 2015: THE WINNER: */
 .winner_section_title {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
   font-size: 14px;
@@ -146,13 +153,13 @@ body {
 .winner .card__body {
   margin-left: 10px;
 }
-/* Line: */
+// Line: */
 //border: 2px solid #979797;
 
 
 
 
-/* Angela Merkel: */
+// Angela Merkel: */
 .name {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
   font-size: 20px;
@@ -166,6 +173,7 @@ body {
   margin-right: 1em;
   overflow: hidden;
 }
+
 .runnerup .card__body,
 .previous .card__body {
   overflow: hidden;
@@ -179,37 +187,32 @@ body {
   letter-spacing: 0.03em;
   font-size: 16px;
 }
-/* Blurb: */
+// Blurb: */
 .standfirst {
-font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
-font-size: 16px;
-color: #505050;
-line-height: 22px;
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+  font-size: 16px;
+  color: #505050;
+  line-height: 22px;
 }
 
 
-/* Kevin Mendoza: */
-/* font-famil'y: MetricWeb, serif';
-font-size: 16px;
-color: #333333;
-line-height: 16px;
- */
+
 // PREVIOUS WINNERS
-/* SECTION TITLE: */
+// SECTION TITLE: */
 .section_title {
-font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
-font-size: 16px;
-color: #505050;
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-size: 16px;
+  color: #505050;
 }
-/* PREVIOUS WINNER NAME: */
+// PREVIOUS WINNER NAME: */
 .previous_name {
-font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
-font-size: 16px;
-color: #333333;
-line-height: 16px;
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-size: 16px;
+  color: #333333;
+  line-height: 16px;
 }
 
-/* YEAR: */
+// YEAR: */
 .year {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
   font-size: 14px;
@@ -221,27 +224,27 @@ line-height: 16px;
 
 // LINK TO FULL PROFILE
 
-/* Full profile: */
+// Full profile: */
 .full-profile {
   font-family: Metric-Regular;
   font-size: 16px;
   color: #333333;
   line-height: 22px;
 };
-/* arrow: */
+// arrow: */
 //border: 3px solid #9B164F;
 
 .full_profile:hover {
-  /* Rectangle 7:hover: */
+  // Rectangle 7:hover: */
   background: #9b164f;
-  width:116px;
-  height:28px;
-  /* Full profile: */
+  width: 116px;
+  height: 28px;
+  // Full profile: */
   font-family: Metric-Regular;
   font-size: 16px;
   color: #ebebeb;
   line-height: 22px;
-  /* arrow: */
+  // arrow: */
   border: 3px solid #ebebeb;
 }
 
@@ -252,13 +255,14 @@ line-height: 16px;
   position: relative;
   bottom: 0;
 
-  & > span.link {
+  & > .link {
     display: block;
     text-align: right;
     margin-right: 30px;
     margin-top: 10px;
     font-weight: 400;
     font-size: 1rem;
+
     &:after {
       content: " ";
       background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=9B164F,9B164F&source=ig_wrr') no-repeat center center;
@@ -279,13 +283,12 @@ line-height: 16px;
   line-height: 1.4em;
   float: right;
 
-  & > span.link {
+  & > .link {
     display: block;
     background-color: #9b164f;
     text-align: left;
     margin-right: 12px;
     margin-top: 10px;
-    font-weight: 400;
     font-size: 1rem;
     width: 114px;
     font-weight: 500;
@@ -295,6 +298,7 @@ line-height: 16px;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     &:after {
       content: " ";
       background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
@@ -332,9 +336,12 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   max-width: 800px;
   margin: 0 auto;
 }
+
 .share-links {  
   // margin-left: 10px;
-  > p { @include visually-hidden; }
+  > p { 
+    @include visually-hidden;
+  }
 
   > ul {
     list-style: none;
@@ -342,7 +349,6 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
     > li {
       display: inline-block;
-      &:not(:first-of-type) { margin-left: 10px; }
     }
   }
 
@@ -373,14 +379,17 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   .headline {
     padding: 8px 30px;
   }
+
   .img-holder,
   .winner .card__body {
-    margin-left: 20px
+    margin-left: 20px;
   }
+
   .img-holder img {
     width: 100px;
     height: 100px;
   } 
+
   .card {
     padding-right: 50px;
   }
@@ -394,37 +403,43 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     font-size: 2em;
     margin-bottom: -20px;
   }
+
   .img-holder,
   .winner .card__body {
-    margin-left: 50px
+    margin-left: 50px;
   }
 
   .img-holder img {
     width: 100px;
     height: 100px;
   }
+
   .job {
     font-size: 18px;
     line-height: 22px;
-    }
+  }
   .name {
     font-size: 22px;
     line-height: 22px;
   }
+
   .standfirst {
     font-size: 22px;
     line-height: 26px;
   }
+
   .winner .name {
     font-size: 1.5em;
   }
+
   .group-heading {
-  font-size: 1.25em;
-  &:after {
-    display: block;
-    width: 80px;
+    font-size: 1.25em;
+
+    &:after {
+      display: block;
+      width: 80px;
+    }
   }
-}
 }
 
  @include oGridRespondTo(L) {
@@ -434,17 +449,20 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     font-size: 2.5em;
     margin-bottom: -24px;
   }
+
   .img-holder,
   .winner .card__body {
-    margin-left: 100px
+    margin-left: 100px;
   }
   .card {
-    padding-right: 100px
+    padding-right: 100px;
   }
+
   .img-holder img {
     width: 100px;
     height: 100px;
   }
+
   .winner .name {
     font-size: 2em;
   }

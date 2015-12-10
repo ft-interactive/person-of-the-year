@@ -20,7 +20,7 @@ const AUTOPREFIXER_BROWSERS = [
   'Safari >= 7'
 ];
 
-const DEPLOY_TARGET = 'demo/Sites/2015/person-of-the-year'; // e.g. 'features/YOUR-PROJECT-NAME'
+const DEPLOY_TARGET = 'demo/sites/2015/person-of-the-year'; // e.g. 'features/YOUR-PROJECT-NAME'
 
 const BROWSERIFY_ENTRIES = [
   'scripts/main.js',
