@@ -129,7 +129,7 @@ body {
   position: relative;
   margin: 24px auto -16px;
   max-width:300px;
-  padding: 8px 10px;
+  padding: 4px 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -370,7 +370,9 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 }
 
 @include oGridRespondTo(S) {
-  
+  .headline {
+    padding: 8px 30px;
+  }
   .img-holder,
   .winner .card__body {
     margin-left: 20px

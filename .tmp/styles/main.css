@@ -2561,7 +2561,7 @@ p {
   position: relative;
   margin: 24px auto -16px;
   max-width: 300px;
-  padding: 8px 10px;
+  padding: 4px 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2762,6 +2762,8 @@ line-height: 16px;
     width: 1px; }
 
 @media (min-width: 30.625em) {
+  .headline {
+    padding: 8px 30px; }
   .img-holder,
   .winner .card__body {
     margin-left: 20px; }
