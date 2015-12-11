@@ -2601,7 +2601,7 @@ p {
 .standfirst {
   font-family: FinancierDisplayWeb, serif;
   font-size: 16px;
-  color: #333333;
+  color: #505050;
   line-height: 22px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -2793,7 +2793,7 @@ p {
     line-height: 22px; }
   .standfirst {
     font-size: 22px;
-    line-height: 26px; }
+    line-height: 29px; }
   .winner .name {
     font-size: 1.5em; }
   .group-heading {
