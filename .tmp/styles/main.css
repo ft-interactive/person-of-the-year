@@ -2621,6 +2621,7 @@ p {
   font-family: MetricWeb, sans-serif;
   font-size: 14px;
   color: #9b164f;
+  margin-top: -3px;
   letter-spacing: 0.5px;
   line-height: 16px;
   font-weight: 500; }
@@ -2792,8 +2793,8 @@ p {
     font-size: 22px;
     line-height: 22px; }
   .standfirst {
-    font-size: 22px;
-    line-height: 29px; }
+    font-size: 21px;
+    line-height: 28px; }
   .winner .name {
     font-size: 1.5em; }
   .group-heading {

@@ -225,6 +225,7 @@ main {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
   font-size: 14px;
   color: #9b164f;
+  margin-top: -3px;
   letter-spacing: 0.5px;
   line-height: 16px;
   font-weight: 500;
@@ -459,8 +460,8 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   }
 
   .standfirst {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 21px;
+    line-height: 28px;
   }
 
   .winner .name {
