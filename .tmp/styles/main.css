@@ -2559,7 +2559,7 @@ p {
   text-align: center;
   position: relative;
   margin: 24px auto -16px;
-  max-width: 300px;
+  max-width: 250px;
   padding: 4px 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -2775,9 +2775,9 @@ p {
 
 @media (min-width: 46.25em) {
   .headline {
-    max-width: 400px;
+    max-width: 370px;
     padding: 12px 30px;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: -20px; }
   .img-holder,
   .winner .card__body {
@@ -2807,7 +2807,7 @@ p {
 
 @media (min-width: 61.25em) {
   .headline {
-    max-width: 400px;
+    max-width: 370px;
     padding: 16px 40px;
     font-size: 2.5em;
     margin-bottom: -24px; }

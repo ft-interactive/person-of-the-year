@@ -140,7 +140,7 @@ main {
   text-align: center;
   position: relative;
   margin: 24px auto -16px;
-  max-width: 300px;
+  max-width: 250px;
   padding: 4px 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -433,9 +433,9 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
  @include oGridRespondTo(M) {
   .headline {
-    max-width: 400px;
+    max-width: 370px;
     padding: 12px 30px;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: -20px;
   }
 
@@ -483,7 +483,7 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
  @include oGridRespondTo(L) {
   .headline {
-    max-width: 400px;
+    max-width: 370px;
     padding: 16px 40px;
     font-size: 2.5em;
     margin-bottom: -24px;
