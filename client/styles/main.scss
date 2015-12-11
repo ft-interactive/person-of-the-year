@@ -384,6 +384,37 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
 }
 
+//credits
+.byline {
+  font-family: MetricWeb;
+  font-size: 14px;
+  font-weight: 200;
+  color: #74736c;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-top: 1px solid oColorsGetPaletteColor('pink-tint3');
+  padding-top: 8px;
+  max-width: 800px;
+
+  div {
+    margin-bottom: 4px;
+  }
+
+  .by,
+  .source {
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: #2e6e9e;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #000000;
+    transition: color 0s;
+  }
+}
+
 @include oGridRespondTo(S) {
   .headline {
     padding: 8px 30px;

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var groups = [];
   var dataset = spreadsheet.data;
   var groupTitles = spreadsheet.groups;
+  var credits = spreadsheet.credits;
 
   // put the dataset into groups and add the corresponding indicators
   dataset.forEach(function (row) {
@@ -55,4 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.winner .group-heading').innerHTML = groupTitles[0].value;
   document.querySelector('.runnerup .group-heading').innerHTML = groupTitles[1].value;
   document.querySelector('.previous .group-heading').innerHTML = groupTitles[2].value;
+  document.querySelector('.byline').innerHTML = writeCredits(credits);
 });
