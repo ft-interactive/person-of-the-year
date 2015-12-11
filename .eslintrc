@@ -11,3 +11,4 @@ rules:
   no-inline-comments: 0
   camelcase: 0
   no-undef: 0
+  no-unused-vars: 0
