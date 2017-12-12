@@ -19,13 +19,13 @@ body {
     }
   }
 
-  &-body {
-    div[data-o-grid-colspan] {
-      & > div {
-        max-width: 700px;
-      }
-    }
-  }
+  // &-body {
+  //   div[data-o-grid-colspan] {
+  //     & > div {
+  //       max-width: 700px;
+  //     }
+  //   }
+  // }
 }
 
 /* Hide whatsapp share button on desktop */
@@ -36,7 +36,6 @@ body {
     }
   }
 }
-
 
 .graphic {
   display: block;
@@ -60,5 +59,4 @@ body {
   &-b-1 {
     max-width: 700px;
   }
-
 }

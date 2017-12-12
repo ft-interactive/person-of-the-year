@@ -1,4 +1,5 @@
-export default (environment = 'development') => ({ // eslint-disable-line
+export default (environment = 'development') => ({
+  // eslint-disable-line
   prod: environment === 'production',
   errorReporting: environment === 'production',
   analytics: environment === 'production',
@@ -27,5 +28,5 @@ export default (environment = 'development') => ({ // eslint-disable-line
     3a499586-b2e0-11e4-a058-00144feab7de
 
   */
-  comments: true,
+  comments: false,
 });
