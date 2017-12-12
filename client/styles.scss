@@ -406,105 +406,112 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   }
 }
 
-@include oGridRespondTo(S) {
-  .headline {
-    padding: 8px 30px;
-  }
+main {
+  @include oGridRespondTo(S) {
+    .headline {
+      padding: 8px 30px;
+    }
 
-  .img-holder,
-  .winner .card__body {
-    margin-left: 20px;
-  }
+    .img-holder,
+    .winner .card__body {
+      margin-left: 20px;
+    }
 
-  .card {
-    padding-right: 50px;
-  }
-}
-
-@include oGridRespondTo(M) {
-  .headline {
-    max-width: 370px;
-    padding: 12px 30px;
-    font-size: 2.5em;
-    margin-bottom: -20px;
-  }
-
-  .img-holder,
-  .winner .card__body {
-    margin-left: 50px;
-  }
-
-  .img-holder img {
-    width: 85px;
-    height: 85px;
-  }
-
-  .job {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .name {
-    font-size: 22px;
-    line-height: 22px;
-  }
-
-  .standfirst {
-    font-size: 21px;
-    line-height: 28px;
-  }
-
-  .winner .name {
-    font-size: 1.5em;
-  }
-
-  .group-heading {
-    font-size: 1.25em;
-
-    &:after {
-      display: block;
-      width: 80px;
+    .card {
+      padding-right: 50px;
     }
   }
-  .card {
-    padding-top: 2.1em;
-    padding-bottom: 2.1em;
-  }
-}
 
-@include oGridRespondTo(L) {
-  .headline {
-    max-width: 370px;
-    padding: 16px 40px;
-    font-size: 2.5em;
-    margin-bottom: -24px;
-  }
+  @include oGridRespondTo(M) {
+    .headline {
+      max-width: 370px;
+      padding: 12px 30px;
+      font-size: 2.5em;
+      margin-bottom: -20px;
+    }
 
-  .img-holder,
-  .winner .card__body {
-    margin-left: 100px;
-  }
-  .card {
-    padding-right: 100px;
-  }
+    .img-holder,
+    .winner .card__body {
+      margin-left: 50px;
+    }
 
-  .img-holder img {
-    width: 100px;
-    height: 100px;
-  }
+    .img-holder img {
+      width: 85px;
+      height: 85px;
+    }
 
-  .winner .name {
-    font-size: 2em;
-  }
-}
+    .job {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .name {
+      font-size: 22px;
+      line-height: 22px;
+    }
 
-// fix for position of profile arrow in link on webkit browsers
+    .standfirst {
+      font-size: 21px;
+      line-height: 28px;
+    }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .story-promo {
-    & > .link {
+    .winner .name {
+      font-size: 1.5em;
+    }
+
+    .group-heading {
+      font-size: 1.25em;
+
       &:after {
-        bottom: -38px;
+        display: block;
+        width: 80px;
+      }
+    }
+    .card {
+      padding-top: 2.1em;
+      padding-bottom: 2.1em;
+    }
+  }
+
+  @include oGridRespondTo(L) {
+    .headline {
+      max-width: 370px;
+      padding: 16px 40px;
+      font-size: 2.5em;
+      margin-bottom: -24px;
+    }
+
+    .img-holder,
+    .winner .card__body {
+      margin-left: 100px;
+    }
+    .card {
+      padding-right: 100px;
+    }
+
+    .img-holder img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .winner .name {
+      font-size: 2em;
+    }
+  }
+
+  // fix for position of profile arrow in link on webkit browsers
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .story-promo {
+      & > .link {
+        &:after {
+          bottom: -38px;
+        }
       }
     }
   }
 }
+
+.winner .img-holder {
+  display: none;
+}
+
