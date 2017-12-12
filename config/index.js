@@ -14,7 +14,13 @@ export default async (environment = 'development') => {
   const groups = spreadsheet.groups.map(group => ({
     id: group.name,
     title: group.value,
-    people: spreadsheet.data.filter(person => person.type === group.name),
+    showAdBefore: group.name === 'previous',
+    people: spreadsheet.data.filter(person => person.type === group.name).map(person => ({
+      ...person,
+      picurl: /^https?:/.test(person.picurl)
+        ? person.picurl
+        : `https://ig.ft.com/sites/person-of-the-year/images/${person.picurl}`,
+    })),
   }));
 
   console.dir('groups', groups);
