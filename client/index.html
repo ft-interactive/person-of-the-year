@@ -3,14 +3,14 @@
 
 {% block article_body %}
 <h1 class="headline">{{spreadsheet.options.title}}</h1>
-<div class="main-image"><img src="images/{{spreadsheet.options.mainpic}}" alt="{{spreadsheet.options.person}}"/></div>
+<div class="main-image"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/{{spreadsheet.options.mainpic | urlencode}}?source=ig&width=800" alt="{{spreadsheet.options.person}}"/></div>
 <div class="content" class="o-grid-row">
 
   <div id="people">
       {% for group in groups %}
 
           {% if group.showAdBefore %}
-          <div style="max-width:600px;margin:0 auto 30px">
+          <div style="max-width:600px;margin:30px auto">
           {# START MID AD SLOT
               You can move this wherever it works best in your page's design.
               For more control over the size, write your own o-ads div - see
@@ -63,7 +63,7 @@
 
 
 <div class="byline">
-    <div class="byline__credit"><span class="by">Graphic by: </span><a href="https://twitter.com/sdbernard">Steve Bernard</a>, <a href="https://twitter.com/carolinenevitt">Caroline Nevitt</a>, <a href="http://search.ft.com/search?queryText=%22Moritz+Eichhorn%22">Moritz Eichhorn</a>, <a href="https://twitter.com/alekswis">Aleks Wisniewska</a>, <a href="https://twitter.com/martinstabe">Martin Stabe</a> and <a href="http://search.ft.com/search?queryText=%22Anna+Dedhar%22">Anna Dedhar</a></div>
+    <div class="byline__credit"><span class="by">Graphic by: </span><a href="https://www.ft.com/steve-bernard">Steve Bernard</a>, <a href="https://www.ft.com/caroline-nevitt">Caroline Nevitt</a>, <a href="https://www.ft.com/search?q=%22Moritz+Eichhorn%22">Moritz Eichhorn</a>, <a href="https://www.ft.com/aleksandra-wisniewska">Aleksandra Wisniewska</a>, <a href="https://www.ft.com/martin-stabe">Martin Stabe</a>, <a href="https://www.ft.com/search?q=%22Anna+Dedhar%22">Anna Dedhar</a>, and <a href="https://www.ft.com/callum-locke">Callum Locke</a></div>
     <div class="byline__source"><span class="source">Sources: </span>Getty Images; Bloomberg; Reuters; FT Research</div>
 </div>
 {% endblock %}
