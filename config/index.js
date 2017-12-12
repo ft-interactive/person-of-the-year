@@ -1,8 +1,24 @@
 import article from './article';
 import getFlags from './flags';
 import getOnwardJourney from './onward-journey';
+import * as bertha from 'bertha-client';
 
 export default async (environment = 'development') => {
+  const spreadsheet = await bertha.get('1nug_Fln7KE2bRiOULYpu9WRJ5EhdSdMgnPy4BBbpklk', [
+    'data',
+    'groups',
+    'options|object',
+    'credits',
+  ]);
+
+  const groups = spreadsheet.groups.map(group => ({
+    id: group.name,
+    title: group.value,
+    people: spreadsheet.data.filter(person => person.type === group.name),
+  }));
+
+  console.dir('groups', groups);
+
   const d = await article(environment);
   const flags = await getFlags(environment);
   const onwardJourney = await getOnwardJourney(environment);
@@ -32,5 +48,7 @@ export default async (environment = 'development') => {
     ...d,
     flags,
     onwardJourney,
+    spreadsheet,
+    groups,
   };
 };
