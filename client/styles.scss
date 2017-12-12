@@ -1,23 +1,11 @@
-$o-grid-is-silent:  false;
-@import 'o-fonts/main';
 @import 'o-colors/main';
-@import 'o-footer/main';
 @import 'o-grid/main';
+@import 'components/core/main';
 
-@import 'fonts';
-
-
-body {
-  @include oColorsFor(page, background);
-
-  margin: 0;
-  border: 0;
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
-}
-
-main {
-  padding: 0 10px;
-}
+// old colours
+$pink-tint2: #e9decf;
+$pink-tint3: #cec6b9;
+$grey-tint4: #505050;
 
 .site-header {
   padding: 18px 0 14px;
@@ -26,16 +14,15 @@ main {
 
   > a {
     opacity: 0.75;
-    
+
     &:hover {
       opacity: 1;
     }
   }
-
 }
-  .masthead {
-    height: 18px;
-  }
+.masthead {
+  height: 18px;
+}
 
 .winner .year,
 .runnerup .year {
@@ -87,7 +74,6 @@ main {
   }
 }
 
-
 .group-heading {
   text-align: center;
   text-transform: uppercase;
@@ -113,9 +99,9 @@ main {
   border-bottom: 1px solid #e9decf;
 }
 
- p {
-    margin: 4px 0;
-  }
+p {
+  margin: 4px 0;
+}
 
 .img-holder {
   float: left;
@@ -125,13 +111,13 @@ main {
   > img {
     width: 57px;
     height: 57px;
-    vertical-align: bottom; 
+    vertical-align: bottom;
   }
 }
 
 // Person of  the Year: */
-.headline {
-  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+main .headline {
+  font-family: $font-display;
   font-size: 27px;
   color: #ffffff;
   line-height: 40px;
@@ -148,7 +134,7 @@ main {
 
 // 2015: THE WINNER: */
 .winner_section_title {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-family: $font-sans;
   font-size: 14px;
   color: #333333;
   letter-spacing: 0.1em;
@@ -161,12 +147,9 @@ main {
 // Line: */
 //border: 2px solid #979797;
 
-
-
-
 // Angela Merkel: */
-.name {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+main .name {
+  font-family: $font-sans;
   font-size: 20px;
   color: #333333;
   line-height: 26px;
@@ -182,11 +165,10 @@ main {
 .runnerup .card__body,
 .previous .card__body {
   overflow: hidden;
-
 }
 
-.job {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+body main .job {
+  font-family: $font-sans;
   font-weight: 500;
   color: #a7a59b;
   font-size: 16px;
@@ -195,7 +177,7 @@ main {
 }
 // Blurb: */
 .standfirst {
-  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+  font-family: $font-display;
   font-size: 16px;
   color: #505050;
   line-height: 22px;
@@ -203,18 +185,16 @@ main {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 // PREVIOUS WINNERS
 // SECTION TITLE: */
 .section_title {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-family: $font-sans;
   font-size: 16px;
   color: #505050;
 }
 // PREVIOUS WINNER NAME: */
 .previous_name {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-family: $font-sans;
   font-size: 16px;
   color: #333333;
   line-height: 16px;
@@ -222,7 +202,7 @@ main {
 
 // YEAR: */
 .year {
-  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  font-family: $font-sans;
   font-size: 14px;
   color: #9b164f;
   margin-top: -3px;
@@ -239,7 +219,7 @@ main {
   font-size: 16px;
   color: #333333;
   line-height: 22px;
-};
+}
 // arrow: */
 //border: 3px solid #9B164F;
 
@@ -259,7 +239,7 @@ main {
 
 .story-promo {
   text-decoration: none;
-  color: oColorsGetPaletteColor('grey-tint4');
+  color: $grey-tint4;
   line-height: 1.2em;
   position: relative;
   bottom: 0;
@@ -274,8 +254,9 @@ main {
     float: right;
 
     &:after {
-      content: " ";
-      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=9B164F,9B164F&source=ig_wrr') no-repeat center center;
+      content: ' ';
+      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=9B164F,9B164F&source=ig_wrr')
+        no-repeat center center;
       background-size: 20px 20px;
       position: absolute;
       bottom: -34px;
@@ -310,8 +291,9 @@ main {
     -moz-osx-font-smoothing: grayscale;
 
     &:after {
-      content: " ";
-      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
+      content: ' ';
+      background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr')
+        no-repeat center center;
       background-size: 20px 20px;
       position: absolute;
       bottom: -4px;
@@ -322,7 +304,6 @@ main {
     }
   }
 }
-
 
 // share links
 $twitter-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgLTEwMyA0MCA0MCI+PHBhdGggZmlsbD0iI2E3YTU5YiIgZD0iTS04MS44NjItODkuNzg2Yy0uODIuMzU3LTEuNy42LTIuNjI0LjcwOC45NDMtLjU1NiAxLjY2OC0xLjQzNiAyLjAxLTIuNDgzLS44ODMuNTEtMS44NjIuODgtMi45MDIgMS4wOC0uODMzLS44Ny0yLjAyLTEuNDItMy4zMzctMS40Mi0yLjUyMyAwLTQuNTcgMi4wMS00LjU3IDQuNDkgMCAuMzUuMDQuNjkuMTE4IDEuMDItMy44LS4xOS03LjE2Ny0xLjk3OC05LjQyLTQuNjktLjM5NC42Ni0uNjIgMS40My0uNjIgMi4yNiAwIDEuNTUuODA3IDIuOTMgMi4wMzMgMy43My0uNzUtLjAyNS0xLjQ1NC0uMjI4LTIuMDctLjU2di4wNTRjMCAyLjE3NiAxLjU3MyAzLjk5IDMuNjY3IDQuNC0uMzg0LjEwNC0uNzkuMTYtMS4yMDQuMTYtLjMgMC0uNTgtLjAyNy0uODYtLjA4LjU4IDEuNzgyIDIuMjcgMy4wOCA0LjI3IDMuMTE2LTEuNTcgMS4yMDUtMy41NCAxLjkyMy01LjY4IDEuOTIzLS4zNyAwLS43NC0uMDI2LTEuMDktLjA2NyAyLjAyIDEuMjcyIDQuNDIgMi4wMTUgNyAyLjAxNSA4LjQgMCAxMy02Ljg0IDEzLTEyLjc3IDAtLjE5NC0uMDA3LS4zOS0uMDE4LS41OC44OS0uNjMzIDEuNjY1LTEuNDI1IDIuMjgtMi4zMjV6Ii8+PC9zdmc+';
@@ -347,9 +328,9 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   margin: 0 auto;
 }
 
-.share-links {  
+.share-links {
   // margin-left: 10px;
-  > p { 
+  > p {
     @include visually-hidden;
   }
 
@@ -362,8 +343,6 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     }
   }
 
-
-
   &__link {
     $size: 40px;
 
@@ -373,16 +352,27 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     border-radius: 2px;
     background-size: $size $size;
 
-    &--twitter { background-image: url('data:image/svg+xml;base64,' + $twitter-logo); }
-    &--facebook { background-image: url('data:image/svg+xml;base64,' + $facebook-logo); }
-    &--linked-in { background-image: url('data:image/svg+xml;base64,' + $linked-in-logo); }
+    &--twitter {
+      background-image: url('data:image/svg+xml;base64,' + $twitter-logo);
+    }
+    &--facebook {
+      background-image: url('data:image/svg+xml;base64,' + $facebook-logo);
+    }
+    &--linked-in {
+      background-image: url('data:image/svg+xml;base64,' + $linked-in-logo);
+    }
 
-    &:hover { background-color: oColorsGetPaletteColor('pink-tint2'); }
-    &:active { background-color: oColorsGetPaletteColor('pink-tint3'); }
+    &:hover {
+      background-color: $pink-tint2;
+    }
+    &:active {
+      background-color: $pink-tint3;
+    }
 
-    > span { @include visually-hidden; }
+    > span {
+      @include visually-hidden;
+    }
   }
-
 }
 
 //credits
@@ -393,7 +383,7 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   color: #74736c;
   margin: 0 auto;
   margin-top: 2rem;
-  border-top: 1px solid oColorsGetPaletteColor('pink-tint3');
+  border-top: 1px solid $pink-tint3;
   padding-top: 8px;
   max-width: 800px;
 
@@ -431,8 +421,7 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   }
 }
 
-
- @include oGridRespondTo(M) {
+@include oGridRespondTo(M) {
   .headline {
     max-width: 370px;
     padding: 12px 30px;
@@ -482,7 +471,7 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   }
 }
 
- @include oGridRespondTo(L) {
+@include oGridRespondTo(L) {
   .headline {
     max-width: 370px;
     padding: 16px 40px;
@@ -510,14 +499,12 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
 // fix for position of profile arrow in link on webkit browsers
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {  
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   .story-promo {
-
     & > .link {
-
       &:after {
         bottom: -38px;
       }
     }
-  }  
+  }
 }
