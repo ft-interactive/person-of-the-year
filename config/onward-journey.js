@@ -9,7 +9,7 @@
 
 export default (environment = 'development') => ({ // eslint-disable-line
   relatedContent: [
-    { rows: 1, list: 'list/graphics' },
+    { rows: 1, list: 'thing/e6ed3ba2-a016-11e5-8613-08e211ea5317' },
     { rows: 1, list: 'thing/d8009323-f898-3207-b543-eab4427b7a77' },
   ],
 });
